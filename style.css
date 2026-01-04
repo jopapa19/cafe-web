@@ -1,0 +1,228 @@
+/* ================= GENERAL STYLES ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= HEADER / NAVBAR ================= */
+header {
+    background: #8b4513; /* chocolate brown */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+#menuBtn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffd700; /* gold hover */
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* ================= HERO / HOME ================= */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ffe4c4, #ffdab9);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* ================= MENU ================= */
+#menu-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 15px 0 5px;
+    color: #8b4513;
+}
+
+.menu-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 10px;
+}
+
+.menu-card span {
+    color: #8b4513;
+    font-weight: bold;
+}
+
+/* ================= ABOUT ================= */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    font-size: 16px;
+}
+
+/* ================= CONTACT ================= */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    background: #8b4513;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background: #5a2d0c;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #8b4513;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    #menuBtn {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        background: #8b4513;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 200px;
+        display: none;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+    }
+
+    .menu-card img {
+        height: 140px;
+    }
+}

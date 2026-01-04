@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Café</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER / NAV ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>My Café</span>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="menu">
+            <li><a href="#home"><i class="fa fa-house"></i> Home</a></li>
+            <li><a href="#menu-section"><i class="fa fa-book-open"></i> Menu</a></li>
+            <li><a href="#about"><i class="fa fa-heart"></i> About</a></li>
+            <li><a href="#contact"><i class="fa fa-phone"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="hero">
+    <h1>Where Every Cup Feels Like Home ☕</h1>
+    <p>
+        Welcome to <strong>My Café</strong>, a cozy place where carefully brewed coffee,
+        fresh pastries, and warm conversations come together.
+    </p>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu-section">
+    <h2>Our Café Menu</h2>
+    <p class="section-desc">
+        Freshly prepared drinks and treats made with love and quality ingredients.
+    </p>
+
+    <div class="menu-grid">
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Coffee">
+            <h3>Classic Coffee</h3>
+            <p>Rich aroma, smooth taste</p>
+            <span>$2.50</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1523942839745-7848d7e3c0d6" alt="Latte">
+            <h3>Creamy Latte</h3>
+            <p>Perfect balance of milk & espresso</p>
+            <span>$3.00</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="Tea">
+            <h3>Fresh Tea</h3>
+            <p>Light, refreshing, and calming</p>
+            <span>$2.00</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Pastries">
+            <h3>Sweet Pastries</h3>
+            <p>Baked daily for perfect freshness</p>
+            <span>$1.50</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <h2>Our Story</h2>
+    <p>
+        My Café started as a small dream to create a welcoming space where people
+        could slow down and enjoy meaningful moments. What began with a simple coffee
+        machine has grown into a warm gathering place for friends, families, and creatives.
+    </p>
+    <p>
+        We believe great coffee brings people together. Every cup we serve reflects
+        our passion for quality, comfort, and community.
+    </p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><i class="fa fa-envelope"></i> info@mycafe.com</p>
+    <p><i class="fa fa-phone"></i> +251 900 000 000</p>
+
+    <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>&copy; 2025 My Café. Crafted with ☕ and ❤️</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
